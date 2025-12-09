@@ -1,0 +1,28 @@
+/**************************************** Camille ********************************/
+
+:root {
+  /* Colours */
+
+  --beige: (#f8f3e4);
+  --moerk-beige: (#c0b494);
+  --oliven: (#555235);
+  --sort: (#211e18);
+  --sennep: (#d99429);
+  --moerk-sennep: (#af6f27);
+  --brun: (#754220);
+
+  /* Fonts */
+  --font-family: "Roboto", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500; 
+
+  /* H1 */
+  --h1-size: 4rem;
+
+  /* H2 */
+  --h2-size: 2rem;
+
+  /* P */
+  --text-size: 1rem;
+}
+

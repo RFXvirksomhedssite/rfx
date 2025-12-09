@@ -11,27 +11,24 @@ img {
   display: block;
 }
 
+
 /**************************************** Camille ********************************/
 
-:root {
-  /* Colours */
+html {
+  font-family: var(--font-family);
+}
 
-  --beige: (#f8f3e4);
-  --moerk-beige: (#c0b494);
-  --oliven: (#555235);
-  --sort: (#211e18);
-  --sennep: (#d99429);
-  --moerk-sennep: (#af6f27);
-  --brun: (#754220);
+h1 {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--h1-size);
+}
 
-  /* Fonts */
+h2 {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--h2-size);
+}
 
-  /* H1 */
-  --h1-size: 4rem;
-
-  /* H2 */
-  --h2-size: 2rem;
-
-  /* P */
-  --text-size: 1rem;
+p {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-size);
 }
