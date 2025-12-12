@@ -25,7 +25,29 @@
       <!-- Fælles kode for header indsættes her (når det er lavet) -->
     </header>
 
-    <main></main>
+    <main>
+      <article>
+        <h1>Tilbud og priser</h1>
+
+        <p>
+          Bestil et uforpligtende opkald og få en god pris bla bla ved at
+          udfylde kontaktformularen nedenfor eller ringe til os XXX
+        </p>
+      </article>
+      <h2>kontaktformular</h2>
+      <form action="formular">
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn" name="navn" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="besked">Forespørgsel:</label>
+        <textarea id="besked" name="besked" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </main>
 
     <footer>
       <!-- Fælles kode for footer indsættes her (når det er lavet) -->
