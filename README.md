@@ -6,3 +6,6 @@ Pakkeløsninger - Ida
 Tidligere cases - Soumia
 
 Custom og generel css - Camille
+Header - Camille
+Footer - Te
+Scrum master - Camille
