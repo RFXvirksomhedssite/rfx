@@ -11,5 +11,18 @@ img {
   display: block;
 }
 
-
 /**************************************** Camille ********************************/
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.card-text {
+  background-color: #fcfaf3;
+}
+
+.card-title {
+  background-color: var(--oliven);
+}
