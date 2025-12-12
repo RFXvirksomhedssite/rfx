@@ -14,7 +14,7 @@
   /* Fonts */
   --font-family: "Roboto", sans-serif;
   --font-weight-regular: 400;
-  --font-weight-medium: 500; 
+  --font-weight-medium: 500;
 
   /* H1 */
   --h1-size: 4rem;
@@ -25,4 +25,3 @@
   /* P */
   --text-size: 1rem;
 }
-
