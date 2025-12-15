@@ -40,8 +40,178 @@ a {
 
 /* Header her */
 
+header {
+  background-color: var(--primary);
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  padding: 1.5rem 5rem 1.5rem 1.5rem;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 30rem;
+  gap: 0.8rem;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-top a {
+  background-color: var(--tertiary);
+  color: var(--text-color);
+  border-radius: 3px;
+  padding: 0.1rem 1.5rem;
+  margin-left: 2rem;
+}
+
+.nav-top a:hover {
+  background-color: var(--secondary);
+}
+
+.search {
+  display: flex;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  color: lightgray;
+  width: 26rem;
+  padding-right: 1rem;
+}
+
+.search-btn {
+  display: flex;
+  background-color: var(--tertiary);
+  align-items: center;
+  border-radius: 3px;
+}
+
+.search-btn img {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a:link {
+  color: var(--tertiary);
+}
+
+nav a:visited {
+  color: var(--tertiary);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 /* Footer her */
 
+/* indsæt footer indstillinger til generel på mandag */
+/*********** footer A - kan lede til 404-site *************/
+/** kan stadig ikke se opdaterede navne på root og ej heller se img-mappen og dermed indsætte img logo i footer **/
+
+.footer-side {
+  font-family: var(--font-family);
+  background-color: var(--primary);
+  padding: 40px;
+  line-height: 0.8em;
+  color: var(--tertiary);
+  margin: -50px;
+  /* kan ikke få footer helt til bund pga. main margin???? */
+  margin-top: 40px;
+  /* ved ik om/hvad du har sat shadow på C, men lad os ensarte */
+  box-shadow: 0px -2px 5px var(--contrast-dark);
+}
+
+.footer-side h3 {
+  font-size: var(--text-size);
+  /* font-size: var(--h3-size); */
+  /***************** Kan vi oprette h3 i custom til fontsize: 16px;******************/
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  padding-bottom: 40px;
+}
+.footer-side p {
+  font-size: var(--text-size);
+  /* fix style: none disc se footer-links a nedenfor */
+}
+
+.footer-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+}
+
+.kontaktoplysninger {
+  display: grid;
+}
+
+.footer-center {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#p-copyrights {
+  font-size: var(--text-size-mobile);
+  text-align: center;
+  padding-top: 30px;
+  /* husk opret media for størrelse på under 800px */
+}
+
+.footer-img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.footer-links {
+  display: grid;
+  justify-content: end;
+  text-align: end;
+  padding-top: 0px;
+}
+
+.footer-links li {
+  list-style-type: none;
+  padding: 0px;
+  line-height: 4em;
+}
+
+.footer-side a {
+  color: var(--tertiary);
+}
+
+.footer-side a:hover {
+  color: var(--contrast-light);
+}
+
+.footer-side a:active {
+  color: var(--contrast);
+}
+
+.footer-side a:visited {
+  color: var(--secondary);
+}
+
+
+
+/* Mobil ændringer her */
 @media (max-width: 800px) {
   h1 {
     font-size: var(--h1-size-mobile);
@@ -54,5 +224,32 @@ a {
   p,
   a {
     font-size: var(--text-size-mobile);
+  }
+
+   .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .footer-side h3 {
+    font-size: var(--text-size-mobile);
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .footer-side li {
+    list-style-type: none;
+  }
+
+  .footer-side p {
+    font-size: var(--text-size-mobile);
+  }
+
+  .footer-center {
+    justify-items: center;
+  }
+  .footer-links {
+    justify-content: center;
+    text-align: right;
   }
 }
