@@ -20,10 +20,9 @@ img {
 }
 
 .card-text {
-  background-color: #fcfaf3;
+  background-color: var(--tertiary-light);
 }
 
 .card-title {
   background-color: var(--oliven);
 }
-

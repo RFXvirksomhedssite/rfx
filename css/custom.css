@@ -4,6 +4,7 @@
   /* Colours */
 
   --tertiary: #f8f3e4;
+  --tertiary-light: #fcfaf3;
   --secondary: #c0b494;
   --primary: #555235;
   --text-color: #211e18;
@@ -23,6 +24,10 @@
   /* H2 */
   --h2-size: 3rem;
   --h2-size-mobile: 1.5rem;
+
+  /* H3 */
+  --h3-size: 2rem;
+  --h3-size-mobile: 1.2rem;
 
   /* P */
   --text-size: 1.4rem;
