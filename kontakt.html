@@ -23,34 +23,306 @@
   <body>
     <header>
       <!-- Fælles kode for header indsættes her (når det er lavet) -->
+      <div class="logo-wrapper">
+        <a href="index.html"
+          ><img class="logo" src="img/logo.svg" alt="RFX logo"
+        /></a>
+      </div>
+      <div class="nav-wrapper">
+        <div class="nav-top">
+          <div class="search">
+            <div class="search-bar">
+              <p>Søg</p>
+            </div>
+            <div class="search-btn">
+              <img src="img/searchDark.svg" alt="Søge ikon" />
+            </div>
+          </div>
+          <a href="/">Kurv</a>
+        </div>
+        <nav class="nav-bund">
+          <a href="index.html">Forside</a>
+          <a href="cases.html">Vores koncept</a>
+          <a href="pakke.html">Produkter og ydelser</a>
+          <a href="/">Om os</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <article>
-        <h1>Tilbud og priser</h1>
+      <section>
+        <article>
+          <h1>Tilbud og priser</h1>
+          <p>
+            Vi tilbyder udlejning af et stort sortiment af materiel til jeres
+            midlertidige begivenheder. Udfyld nedenstående kontaktformular, hvis
+            du ønsker svar på forespørgsler, vejledning eller ønsker et tilbud
+            på afvikling af dit event, så bestil en uforpligtende samtale med
+            os!
+          </p>
+          <br />
+          <p>
+            Vores mission er at få vores viden og opfindsomhed fra Roskilde
+            Festival ud at leve i andre sammenhænge året rundt. Det betyder, at
+            vi kan tilbyde rådgivning, oplæg, workshops og kurser inden for alle
+            de mange discipliner, som vi folder ud på festivalen.
+          </p>
+          <br />
+          <p>
+            Vi laver arrangementer året rundt og leverer materiel og rådgivning
+            til alt fra mindre niche-forsamlinger til store stadionkoncerter og
+            diverse festivaler og selvfølgelig vores egen Roskilde Festival.
+          </p>
+        </article>
+        <br /><br />
+        <h3 id="h3kf">Kontaktformular</h3>
+        <form aria-label="kontaktformular">
+          <div class="form-gruppe">
+            <label for="navn">Kontaktpersons navn:</label>
+            <input
+              type="text"
+              id="navn"
+              name="navn"
+              aria-describedby="navn-fejl"
+              required
+            />
+            <p class="fejlbesked" id="navn-fejl">
+              Indtast venligst navn på kontaktpersonen
+            </p>
+          </div>
 
-        <p>
-          Bestil et uforpligtende opkald og få en god pris bla bla ved at
-          udfylde kontaktformularen nedenfor eller ringe til os XXX
-        </p>
-      </article>
-      <h2>kontaktformular</h2>
-      <form action="formular">
-        <label for="navn">Navn:</label>
-        <input type="text" id="navn" name="navn" required />
+          <div class="form-gruppe">
+            <label for="virksomhed_navn">Virksomhedens navn:</label>
+            <input
+              type="text"
+              id="virksomhed_navn"
+              name="virksomhed_navn"
+              aria-describedby="virksomhed_navn-fejl"
+              required
+            />
+            <p class="fejlbesked" id="virksomhed_navn-fejl">
+              Indtast venligst navn på virksomheden
+            </p>
+          </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <div class="form-gruppe">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-describedby="email-fejl"
+              required
+            />
+            <p class="fejlbesked" id="email-fejl">Indtast venligst email</p>
+          </div>
 
-        <label for="besked">Forespørgsel:</label>
-        <textarea id="besked" name="besked" rows="4" required></textarea>
+          <div class="form-gruppe">
+            <label for="telefon">Telefonnummer:</label>
+            <input
+              type="phone"
+              id="telefon"
+              name="telefon"
+              aria-describedby="telefon-fejl"
+              required
+            />
+            <p class="fejlbesked" id="telefon-fejl">
+              Indtast venligst telefonnummer
+            </p>
+          </div>
 
-        <button type="submit">Send</button>
-      </form>
+          <h3>Antal deltagere</h3>
+          <div class="form-gruppe">
+            <label for="under-tusind">
+              <input
+                type="radio"
+                id="under-tusind"
+                name="deltagere"
+                value="Under 1.000"
+              />Under 1.000
+            </label>
+            <br />
+            <label for="mellem-tusind-tyve-tusind">
+              <input
+                type="radio"
+                id="mellem-tusind-tyve-tusind"
+                name="deltagere"
+                value="Mellem 1.000 - 20.000"
+              />Mellem 1.000 - 20.000
+            </label>
+            <br />
+            <label for="over-tyve-tusind">
+              <input
+                type="radio"
+                id="over-tyve-tusind"
+                name="deltagere"
+                value="Over 20.000"
+              />Over 20.000
+            </label>
+          </div>
+
+          <!-- <label for="deltagere">Under 1.000 </label>
+          <input type="radio" id="deltagere" name="under-tusind" />
+
+          <label for="deltagere"> 1.000 - 10.000 </label>
+          <input type="radio" id="deltagere" name="tusind--tyve-tusind" />
+
+          <label for="deltagere"> Over 20.000 </label>
+          <input type="radio" id="deltagere" name="over-tyve-tusind" /> -->
+
+          <h3>Produkter</h3>
+          <div class="form-gruppe">
+            <label for="produkter"
+              ><input
+                type="checkbox"
+                id="produkter"
+                name="produkter"
+                value="Musik og lyd"
+              />
+              Musik og lyd</label
+            >
+            <br />
+
+            <label for="produkter"
+              ><input
+                type="checkbox"
+                id="produkter"
+                name="produkter"
+                value="Lyd og scene"
+              />
+              Lyd og scene</label
+            >
+            <br />
+            <label for="produkter"
+              ><input
+                type="checkbox"
+                id="produkter"
+                name="produkter"
+                value="Telte, borde/bænke, service"
+              />
+              Telte, borde/bænke, service</label
+            >
+            <br />
+            <label for="produkter"
+              ><input
+                type="checkbox"
+                id="produkter"
+                name="produkter"
+                value="Toiletvogne og sanitetsløsninger"
+              />
+              Toiletvogne og sanitetsløsninger</label
+            >
+            <br />
+            <label for="produkter"
+              ><input
+                type="checkbox"
+                id="produkter"
+                name="produkter"
+                value="Hegn og afspærring"
+              />
+              Hegn og afspærring</label
+            >
+          </div>
+
+          <h3>Forespørgsel</h3>
+          <div class="form-gruppe">
+            <label for="besked">Skriv evt. din besked/forespørgsel her:</label>
+            <textarea name="besked" id="besked" rows="4"></textarea>
+          </div>
+
+          <div class="form-gruppe">
+            <label for="betingelser">
+              <input
+                type="checkbox"
+                id="betingelser"
+                name="betingelser"
+                value="accepteret"
+                aria-describedby="betingelser-fejl"
+                required
+              />
+              Accepter betingelser</label
+            >
+
+            <p class="fejlbesked" id="betingelser-fejl">
+              Accepter betingelser ved at sætte flueben i boksen ovenfor
+            </p>
+          </div>
+
+          <button type="submit" id="sendknap">Send</button>
+        </form>
+      </section>
+
+      <section class="bekraeftelse">
+        <h3 id="h3ov">Oversigt</h3>
+        <!-- <p>
+          Vi har modtaget din henvendelse og kontakter dig inden for 3-5
+          hverdage.
+        </p> -->
+        <div>
+          <p class="navnOutput">
+            Kontaktpersons navn: <span id="navn_output"></span>
+          </p>
+          <p class="virksomhed_navnOutput">
+            Virksomhedens navn:<span id="virksomhed_navn_output"></span>
+          </p>
+          <p class="emailOutput">Email: <span id="email_output"></span></p>
+
+          <p class="telefonOutput">
+            Telefonnummer: <span id="telefon_output"></span>
+          </p>
+
+          <p class="deltagerOutput">
+            Antal deltagere:<span id="deltagere_output"></span>
+          </p>
+          <p class="produkterOutput">
+            Produkter: <span id="produkter_output"></span>
+          </p>
+          <p class="beskedOutput">Besked: <span id="besked_output"></span></p>
+
+          <p class="betingelserOutput">
+            Betingelser: <span id="betingelser_output"></span>
+          </p>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <!-- Fælles kode for footer indsættes her (når det er lavet) -->
+    <footer class="footer-side">
+      <section class="footer-container">
+        <div class="kontaktoplysninger">
+          <h3>Kontaktoplysninger</h3>
+          <ul>
+            <li><p>Logistik og lager</p></li>
+            <li><p>Vor Frue Hovedgade 6</p></li>
+            <li><p>4000 Roskilde</p></li>
+            <br />
+            <li><p>Telefon: +45 46 36 66 93</p></li>
+            <li>
+              <a href="mailto:logistik@rfexperience.dk"
+                >logistik@rfexperience.dk</a
+              >
+            </li>
+            <li><p>CVR-nr.: 26465745</p></li>
+          </ul>
+        </div>
+
+        <div class="footer-center">
+          <!-- indsæt RFX LOGO -->
+          <img src="/img/terapi.webp" class="footer-img" alt="logobillede" />
+          <p id="p-copyrights">
+            Roskilde Festival Experience &copy; 2025 Copyright
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <li><a href="404.html">Om os</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="404.html">Materialevejledning og rådgivning</a></li>
+            <li><a href="404.html">Viden og uddannelse</a></li>
+          </ul>
+        </div>
+      </section>
     </footer>
 
     <!-- Hvis nødvendigt -->
