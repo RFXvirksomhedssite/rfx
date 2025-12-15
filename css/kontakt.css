@@ -11,4 +11,193 @@ img {
   display: block;
 }
 
-/**************************************** Te ********************************/
+/**************************************** Te kontaktformular slut ********************************/
+
+html {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0 50px;
+}
+main {
+  display: grid;
+  padding: 2rlh;
+  gap: 2rlh;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto auto 1fr auto;
+  font-family: var(--font-family);
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* font-weight: var(--font-weight-medium);
+  font-size: var(--h1-size); */
+}
+/*
+h2 {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--h2-size); 
+}*/
+
+h3 {
+  font-family: var(--font-family);
+  font-size: var(--text-size);
+  /* font-size: var(--h3-size); */
+  /***************** Kan vi oprette h3 i custom til fontsize: 16px;******************/
+  font-weight: var(--font-weight-medium);
+  margin-top: 5px;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+#h3kf,
+#h3ov {
+  background-color: var(--primary);
+  border-radius: 6px;
+  padding-inline: 20px;
+  padding-bottom: 10px;
+  color: var(--tertiary);
+}
+
+section {
+  display: grid;
+  gap: 1rlh;
+  align-content: start;
+}
+
+form {
+  border: 2px solid var(--secondary);
+  border-radius: 6px;
+}
+
+textarea {
+  border: 1px solid var(--secondary);
+  padding: 0.25em;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px #0001;
+  background-color: var(--tertiary);
+  /* resize: vertical; */
+}
+/* .bekraeftelse {
+  margin-top: 100px;
+} */
+
+.bekraeftelse div {
+  background: var(--tertiary);
+  padding: 20px;
+  border-radius: 6px;
+  display: grid;
+  gap: 0.8em;
+}
+input {
+  border: 1px solid var(--secondary);
+  padding: 0.25rlh;
+
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px #0001;
+}
+
+.fejlbesked {
+  color: var(--contrast);
+}
+
+/* Form layout */
+form {
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+
+  .form-gruppe {
+    display: grid;
+    gap: 0.1rlh;
+  }
+
+  label:has(input) {
+    display: flex;
+    align-items: center;
+    gap: 0.25rlh;
+    justify-self: start;
+  }
+}
+
+/* Pseudo-classes */
+:focus-visible {
+  /* virker til både knapper og input-felter, select, textarea, links mm. */
+  outline: 2px solid var(--contrast-light);
+  outline-offset: 1px;
+}
+/* Hover-styles */
+button:hover {
+  background: var(--contrast);
+}
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: 0.98;
+  background: var(--secondary);
+}
+
+/* Valideringsregler */
+/* Skjul fejlmeddelelsen som standard */
+.fejlbesked {
+  display: none;
+}
+.form-gruppe:has(:required) {
+  label::after {
+    content: " *";
+    color: var(--contrast);
+  }
+}
+
+.form-gruppe:has(:user-invalid) {
+  input {
+    outline: 3px solid var(--contrast);
+    border-color: var(--contrast);
+  }
+  /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
+  .fejlbesked {
+    display: block;
+  }
+}
+
+/* tilpas så den ryger retur til same hover effekts etc som ovenstående pseudo */
+#sendknap {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-size);
+  line-height: var(--text-line-height);
+  text-wrap: pretty;
+  text-decoration: none;
+  color: var(--tertiary);
+  background-color: var(--primary);
+
+  padding: 10px;
+  border-radius: 6px;
+  width: 20%;
+  justify-self: end;
+  cursor: pointer;
+}
+/* til mobil fix
+body {
+  padding: 2rlh;
+  display: grid;
+  gap: 2rlh;
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+section {
+  display: grid;
+  gap: 1rlh;
+  align-content: start;
+}
+
+.bekraeftelse div {
+  background: #f5f5f5;
+  padding: 1rlh;
+  border-radius: 6px;
+  display: grid;
+  gap: 0.5rlh;
+} */
+/**************************************** Te kontaktformular slut ********************************/
