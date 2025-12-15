@@ -22,23 +22,125 @@
 
   <body>
     <header>
-      <!-- Fælles kode for header indsættes her (når det er lavet) -->
+      <div class="logo-wrapper">
+        <a href="index.html"
+          ><img class="logo" src="img/logo.svg" alt="RFX logo"
+        /></a>
+      </div>
+      <div class="nav-wrapper">
+        <div class="nav-top">
+          <div class="search">
+            <div class="search-bar">
+              <p>Søg</p>
+            </div>
+            <div class="search-btn">
+              <img src="img/searchDark.svg" alt="Søge ikon" />
+            </div>
+          </div>
+          <a href="/">Kurv</a>
+        </div>
+        <nav class="nav-bund">
+          <a href="index.html">Forside</a>
+          <a href="cases.html">Vores koncept</a>
+          <a href="pakke.html">Produkter og ydelser</a>
+          <a href="404.html">Om os</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section>
+      <section class="tideligerecases">
         <h1>Tideligere cases</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsa
           totam accusantium quibusdam necessitatibus eveniet natus, maxime
           reprehenderit placeat sed recusandae modi voluptatibus nisi voluptas
-          iste vel tempore enim non.
+          iste vel tempore enim non.<a href="#" class="caseknap">Læs mere</a>
         </p>
-      
+        <p class="mere-tekst">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          quisquam ab sunt tempore laboriosam rem vel molestias, placeat
+          inventore labore facere distinctio voluptatum tenetur repudiandae.
+          Corporis temporibus suscipit cupiditate tenetur! Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. Eum tempora nesciunt,
+          consequuntur quasi saepe blanditiis veritatis asperiores, perferendis,
+          a cumque sunt quis quibusdam voluptatem laudantium! Laborum excepturi
+          hic inventore natus.
+        </p>
+      </section>
+      <section class="galleri">
+        <div id="swipefor" class="cases_galleri">
+          <div class="cases">
+            <img
+              id="swipeforbilleder"
+              src="img/Roskilde-Dyrskue.webp"
+              alt="Roskilde-Dyrskue"
+            />
+            <p class="overskrift">Roskilde Dyreskue</p>
+            <a href="#" class="caseknap">Læs mere</a>
+          </div>
+
+          <div class="cases">
+            <img
+              id="swipeforbilleder"
+              src="img/spejdernes-lejr.webp"
+              alt="Spejdernes Lejr"
+            />
+            <p class="overskrift">Spejdernes Lejr</p>
+            <a href="#" class="caseknap">Læs mere</a>
+          </div>
+
+          <div class="cases">
+            <img
+              id="swipeforbilleder"
+              src="img/sakura.webp"
+              alt="Sakura og bloom festival"
+            />
+            <p class="overskrift">Sakura & Bloom festival</p>
+            <a href="#" class="caseknap">Læs mere</a>
+          </div>
+
+          <div class="cases">
+            <img
+              id="swipeforbilleder"
+              src="img/Roskilde_Festival.webp"
+              alt="Roskilde festival"
+            />
+            <p class="overskrift">Roskilde Festival</p>
+            <a href="#" class="caseknap">Læs mere</a>
+          </div>
+        </div>
+        <div class="cases-prikker">
+          <span class="prik aktiv"></span>
+          <span class="prik"></span>
+          <span class="prik"></span>
+          <span class="prik"></span>
+          <span class="prik"></span>
+        </div>
+      </section>
     </main>
+    <div id="lightbox">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
 
     <footer>
-      <!-- Fælles kode for footer indsættes her (når det er lavet) -->
+      <div class="footer-center">
+        <!-- indsæt RFX LOGO -->
+        <img src="/img/terapi.webp" class="footer-img" alt="logobillede" />
+        <p id="p-copyrights">
+          Roskilde Festival Experience &copy; 2025 Copyright
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <ul>
+          <li><a href="404.html">Om os</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="404.html">Materialevejledning og rådgivning</a></li>
+          <li><a href="404.html">Viden og uddannelse</a></li>
+        </ul>
+      </div>
     </footer>
 
     <!-- Hvis nødvendigt -->

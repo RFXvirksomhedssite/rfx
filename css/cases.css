@@ -11,5 +11,119 @@ img {
   display: block;
 }
 
-
 /**************************************** Soumia ********************************/
+
+.main {
+  background-color: #f8f3e4;
+  max-width: 1400px;
+}
+
+.tideligerecases {
+  width: 595px;
+  height: auto;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  border-bottom: 3px solid#d99429;
+  display: inline-block;
+}
+
+.tideligerecases h1 {
+  font-size: 52px;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.tideligerecases p {
+  line-height: 1.6;
+  font-size: 20px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.galleri {
+  padding-bottom: 30px;
+}
+
+.cases_galleri {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 30%;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.cases img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+}
+
+.overskrift {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0 8px;
+}
+
+.caseknap {
+  display: inline-block;
+  background: #d99429;
+  color: #000000;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.mere-tekst {
+  display: none;
+}
+
+.tideligerecases .caseknap {
+  margin-left: 10px;
+}
+
+.cases-prikker {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.prik {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #cfcfcf;
+}
+
+.prik.aktiv {
+  background: #d99429;
+}
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+/*mobil*/
+
+@media (max-width: 700px) {
+  .tideligerecases {
+    font-size: 16px;
+  }
+}
