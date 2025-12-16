@@ -45,12 +45,21 @@
           <a href="cases.html">Vores koncept</a>
           <a href="pakke.html">Produkter og ydelser</a>
           <a href="/">Om os</a>
-          <a href="kontakt.html">Kontakt</a>
+          <a class="active-menu" href="kontakt.html">Kontakt</a>
         </nav>
       </div>
     </header>
 
     <main>
+      <div class="krumme">
+        <a href="index.html">Forside</a>
+        <span class="krumme-pil">></span>
+        <a href="kontakt.html">Kontakt</a>
+        <span class="krumme-pil">></span>
+        <a href="kontakt.html">Kontaktoplysninger</a>
+      </div>
+      <div></div>
+
       <section>
         <article>
           <h1>Tilbud og priser</h1>
@@ -78,6 +87,7 @@
         <br /><br />
         <h3 id="h3kf">Kontaktformular</h3>
         <form aria-label="kontaktformular">
+          <h3>Kontaktoplysninger</h3>
           <div class="form-gruppe">
             <label for="navn">Kontaktpersons navn:</label>
             <input
@@ -121,12 +131,13 @@
           <div class="form-gruppe">
             <label for="telefon">Telefonnummer:</label>
             <input
-              type="phone"
+              type="tel"
               id="telefon"
               name="telefon"
               aria-describedby="telefon-fejl"
               required
             />
+
             <p class="fejlbesked" id="telefon-fejl">
               Indtast venligst telefonnummer
             </p>
@@ -172,54 +183,55 @@
           <input type="radio" id="deltagere" name="over-tyve-tusind" /> -->
 
           <h3>Produkter</h3>
+          <p>Hvilke produkter er relevante for dit event?</p>
           <div class="form-gruppe">
-            <label for="produkter"
+            <label for="musik-og-lyd"
               ><input
                 type="checkbox"
-                id="produkter"
+                id="musik-og-lyd"
                 name="produkter"
-                value="Musik og lyd"
+                value="musik-og-lyd"
               />
               Musik og lyd</label
             >
             <br />
 
-            <label for="produkter"
+            <label for="lyd-og-scene"
               ><input
                 type="checkbox"
-                id="produkter"
+                id="lyd-og-scene"
                 name="produkter"
-                value="Lyd og scene"
+                value="lyd-og-scene"
               />
               Lyd og scene</label
             >
             <br />
-            <label for="produkter"
+            <label for="telte-borde-baenke-service"
               ><input
                 type="checkbox"
-                id="produkter"
+                id="telte-borde-baenke-service"
                 name="produkter"
-                value="Telte, borde/bænke, service"
+                value="telte-borde-baenke-service"
               />
               Telte, borde/bænke, service</label
             >
             <br />
-            <label for="produkter"
+            <label for="toiletvogne-og-sanitetsloesninger"
               ><input
                 type="checkbox"
-                id="produkter"
+                id="toiletvogne-og-sanitetsloesninger"
                 name="produkter"
-                value="Toiletvogne og sanitetsløsninger"
+                value="toiletvogne-og-sanitetsloesninger"
               />
               Toiletvogne og sanitetsløsninger</label
             >
             <br />
-            <label for="produkter"
+            <label for="hegn-og-afspaerring"
               ><input
                 type="checkbox"
-                id="produkter"
+                id="hegn-og-afspaerring"
                 name="produkter"
-                value="Hegn og afspærring"
+                value="hegn-og-afspaerring"
               />
               Hegn og afspærring</label
             >
@@ -295,7 +307,7 @@
             <li><p>Logistik og lager</p></li>
             <li><p>Vor Frue Hovedgade 6</p></li>
             <li><p>4000 Roskilde</p></li>
-            <br />
+
             <li><p>Telefon: +45 46 36 66 93</p></li>
             <li>
               <a href="mailto:logistik@rfexperience.dk"
