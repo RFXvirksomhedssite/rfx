@@ -13,16 +13,111 @@ img {
 
 /**************************************** Camille ********************************/
 
-.content {
+
+.grid1, .grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
 }
 
-.card-text {
+.card {
   background-color: var(--tertiary-light);
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+
+.card-text {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.card-text p {
+  padding-top: 1.8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.card-text a {
+  margin: 1.8rem auto;
 }
 
 .card-title {
-  background-color: var(--oliven);
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 1rem 0;
+  color: var(--tertiary);
+  display: grid;
+}
+
+.card-title h2 {
+  margin: auto;
+}
+
+.img-box {
+  margin-top: 4rem;
+}
+
+#img-box2 {
+  order: -1;
+}
+
+.hero {
+  background-image: url("/img/header_img.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1rem 10rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.hero-text {
+  background-color: #211e18d8;
+  color: var(--tertiary);
+  text-align: center;
+  width: 50rem;
+  border-radius: 10px;
+  padding: 2rem 7rem;
+}
+
+.hero-text p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .grid1, .grid2 {
+  display: block;
+}
+
+.card {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.card-text p {
+  padding-top: 1.5rem;
+  padding-right: 7rem;
+  padding-left: 7rem;
+}
+
+.card-text a {
+  margin: 1.5rem auto;
+}
+
+.img-box {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.hero {
+  background-image: url("/img/header_img_mobile.webp");
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 }
