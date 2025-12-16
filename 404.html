@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RFX - Fejl</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RFX - 404</title>
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/generel.css" />
     <meta name="robots" content="noindex" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-      <!-- Fælles kode for header indsættes her (når det er lavet) -->
+      <div class="logo-wrapper">
+        <a href="index.html"
+          ><img class="logo" src="img/logo.svg" alt="RFX logo"
+        /></a>
+      </div>
+      <div class="nav-wrapper">
+        <div class="nav-top">
+          <div class="search">
+            <div class="search-bar">
+              <p>Søg</p>
+            </div>
+            <div class="search-btn">
+              <img src="img/searchDark.svg" alt="Søge ikon" />
+            </div>
+          </div>
+          <a href="/">Kurv</a>
+        </div>
+        <nav class="nav-bund">
+          <a href="index.html">Forside</a>
+          <a href="cases.html">Vores koncept</a>
+          <a href="pakke.html">Produkter og ydelser</a>
+          <a href="404.html">Om os</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
     </header>
+
     <main>
-
-<!-- Lottie file her -->
-
+      <div class="container">
+        <img src="img/404_noloop.gif" alt="Page not found animation" />
+        <a href="index.html">Go Home</a>
+      </div>
     </main>
-    <footer>
-      <!-- Fælles kode for footer indsættes her (når det er lavet) -->
+
+    <footer class="footer-side">
+      <section class="footer-container">
+        <div class="kontaktoplysninger">
+          <h3>Kontaktoplysninger</h3>
+          <ul>
+            <li><p>Logistik og lager</p></li>
+            <li><p>Vor Frue Hovedgade 6</p></li>
+            <li><p>4000 Roskilde</p></li>
+            <li><p>Telefon: +45 46 36 66 93</p></li>
+            <li>
+              <a href="mailto:logistik@rfexperience.dk"
+                >logistik@rfexperience.dk</a
+              >
+            </li>
+            <li><p>CVR-nr.: 26465745</p></li>
+          </ul>
+        </div>
+
+        <div class="footer-center">
+          <!-- indsæt RFX LOGO -->
+          <img src="/img/terapi.webp" class="footer-img" alt="logobillede" />
+          <p id="p-copyrights">
+            Roskilde Festival Experience &copy; 2025 Copyright
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <li><a href="404.html">Om os</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="404.html">Materialevejledning og rådgivning</a></li>
+            <li><a href="404.html">Viden og uddannelse</a></li>
+          </ul>
+        </div>
+      </section>
     </footer>
+
     <script src="js/generel.js"></script>
-</body>
+    <script src="js/pakke.js"></script>
+    <script src="js/login.js"></script>
+  </body>
 </html>
