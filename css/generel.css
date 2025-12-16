@@ -291,6 +291,10 @@ nav a:hover {
     font-size: var(--text-size-mobile);
   }
 
+  .krumme {
+    display: none;
+  }
+
   .btn-light, .btn-dark {
     font-size: var(--text-size-mobile);
   }
