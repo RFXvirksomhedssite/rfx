@@ -20,8 +20,8 @@ html {
 }
 main {
   display: grid;
-  padding: 2rlh;
-  gap: 2rlh;
+  padding: 2rem;
+  gap: 2rem;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: auto auto 1fr auto;
   font-family: var(--font-family);
@@ -41,14 +41,16 @@ h2 {
 
 h3 {
   font-family: var(--font-family);
-  font-size: var(--text-size);
-  /* font-size: var(--h3-size); */
-  /***************** Kan vi oprette h3 i custom til fontsize: 16px;******************/
+  font-size: var(--h3-size);
   font-weight: var(--font-weight-medium);
+
   margin-top: 5px;
   letter-spacing: 1px;
   padding-top: 10px;
   padding-bottom: 0px;
+}
+p {
+  font-size: var(--text-size);
 }
 
 #h3kf,
@@ -62,85 +64,69 @@ h3 {
 
 section {
   display: grid;
-  gap: 1rlh;
+  gap: 1rem;
   align-content: start;
 }
 
+/* Formular layout */
 form {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: var(--text-size);
   border: 2px solid var(--secondary);
   border-radius: 6px;
 }
+.form-gruppe {
+  display: grid;
+  gap: 0.25rem;
+}
 
-textarea {
+label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-self: start;
+  padding: 5px;
+}
+
+textarea,
+input {
   border: 1px solid var(--secondary);
   padding: 0.25em;
   border-radius: 6px;
   box-shadow: 0px 1px 2px #0001;
   background-color: var(--tertiary);
-  /* resize: vertical; */
+  font-size: var(--text-size);
+  font-family: var(--font-family);
 }
-/* .bekraeftelse {
-  margin-top: 100px;
-} */
-
-.bekraeftelse div {
-  background: var(--tertiary);
-  padding: 20px;
-  border-radius: 6px;
-  display: grid;
-  gap: 0.8em;
+textarea {
+  resize: vertical;
 }
-input {
-  border: 1px solid var(--secondary);
-  padding: 0.25rlh;
+/* Formular layout slut */
 
-  border-radius: 6px;
-  box-shadow: 0px 1px 2px #0001;
-}
-
-.fejlbesked {
-  color: var(--contrast);
-}
-
-/* Form layout */
-form {
-  display: grid;
-  gap: 1rlh;
-  padding: 1rlh;
-
-  .form-gruppe {
-    display: grid;
-    gap: 0.1rlh;
-  }
-
-  label:has(input) {
-    display: flex;
-    align-items: center;
-    gap: 0.25rlh;
-    justify-self: start;
-  }
-}
-
-/* Pseudo-classes */
+/* Knapper/input layout start */
 :focus-visible {
   /* virker til både knapper og input-felter, select, textarea, links mm. */
   outline: 2px solid var(--contrast-light);
   outline-offset: 1px;
 }
-/* Hover-styles */
+
 button:hover {
   background: var(--contrast);
 }
-/* Active-styles (imens man klikker) */
+
 button:active {
   scale: 0.98;
   background: var(--secondary);
 }
+/* Knapper/input layout slut */
 
-/* Valideringsregler */
+/* fejlbesked layout start */
 /* Skjul fejlmeddelelsen som standard */
 .fejlbesked {
   display: none;
+  color: var(--contrast);
 }
 .form-gruppe:has(:required) {
   label::after {
@@ -148,20 +134,37 @@ button:active {
     color: var(--contrast);
   }
 }
-
+/* fejlmeddelelse style */
 .form-gruppe:has(:user-invalid) {
   input {
     outline: 3px solid var(--contrast);
     border-color: var(--contrast);
+    background-color: var(--contrast-light);
   }
   /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
   .fejlbesked {
     display: block;
   }
 }
+/* fejlbesked layout slut */
+
+/* bekræftigelse layout start */
+.bekraeftelse {
+  margin-top: 100px;
+  font-size: var(--text-size);
+}
+
+.bekraeftelse div {
+  background: var(--tertiary);
+  padding: 20px;
+  border-radius: 6px;
+  display: grid;
+  gap: 1rem;
+}
+/* bekræftigelse layout slut */
 
 /* tilpas så den ryger retur til same hover effekts etc som ovenstående pseudo */
-#sendknap {
+button {
   font-family: var(--font-family);
   font-weight: var(--font-weight-medium);
   font-size: var(--text-size);
@@ -177,15 +180,15 @@ button:active {
   justify-self: end;
   cursor: pointer;
 }
-/* til mobil fix
-body {
-  padding: 2rlh;
-  display: grid;
-  gap: 2rlh;
+/* main {
+  padding: 2rem;
+  gap: 2rem;
   @media (max-width: 800px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
-}
+} */
+
+/* til mobil fix
 
 section {
   display: grid;

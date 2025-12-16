@@ -9,6 +9,8 @@ const produkterOutput = document.querySelector("#produkter_output");
 const beskedOutput = document.querySelector("#besked_output");
 const betingelserOutput = document.querySelector("#betingelser_output");
 
+// implementer ændring af højre side fra kontaktoplysninger til opsummering/bekræftelse på bestilling og forventet svartid
+
 // når man har lavet fejlbeskrivelse til required formularer, skal den orange pop up - (browserens orange standard box) blokeres.
 form.addEventListener("invalid", cancelPopup, true);
 
@@ -19,6 +21,7 @@ function cancelPopup(event) {
 
 // Tilføj event listener, der lytter efter 'submit' eventet (submit indstiller til reset af formular se slide 33)
 form.addEventListener("submit", handleSubmit);
+// indsæt hide-funktion for Kontaktoplysninger, når submittet og vi opsummering
 
 // Lav en funktion, der stopper refresh og nulstiller formularen
 function handleSubmit(event) {
