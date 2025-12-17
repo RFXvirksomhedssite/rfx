@@ -13,44 +13,21 @@ img {
 
 /**************************************** Te kontaktformular slut ********************************/
 
-html {
-  font-family: var(--font-family);
-  color: var(--text-color);
-  margin: 0 50px;
-}
 main {
   display: grid;
   padding: 2rem;
   gap: 2rem;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: auto auto 1fr auto;
-  font-family: var(--font-family);
 }
 
 h1 {
   margin-top: 20px;
   margin-bottom: 30px;
-  /* font-weight: var(--font-weight-medium);
-  font-size: var(--h1-size); */
 }
-/*
-h2 {
-  font-weight: var(--font-weight-regular);
-  font-size: var(--h2-size); 
-}*/
 
 h3 {
-  font-family: var(--font-family);
-  font-size: var(--h3-size);
   font-weight: var(--font-weight-medium);
-
-  margin-top: 5px;
   letter-spacing: 1px;
   padding-top: 10px;
-  padding-bottom: 0px;
-}
-p {
-  font-size: var(--text-size);
 }
 
 #h3kf,
@@ -66,6 +43,14 @@ section {
   display: grid;
   gap: 1rem;
   align-content: start;
+}
+
+.grid_2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid_2-1-1 {
+  grid-template-columns: 2fr 0.5fr 0.5fr;
 }
 
 /* Formular layout */
@@ -84,7 +69,6 @@ form {
 
 label {
   display: flex;
-  align-items: center;
   gap: 1rem;
   justify-self: start;
   padding: 5px;
@@ -148,10 +132,33 @@ button:active {
 }
 /* fejlbesked layout slut */
 
+/* kontaktoplysninger layout start */
+div.hidden {
+  align-items: center;
+  justify-items: center;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+  line-height: var(--text-line-height);
+}
+/* 
+.order {
+  order: -2;
+  gap: 1rem;
+  align-items: end;
+} */
+/* 
+#hidden {
+  display: none;
+} */
+
+/* kontaktoplysninger layout slut */
+
 /* bekræftigelse layout start */
 .bekraeftelse {
-  margin-top: 100px;
   font-size: var(--text-size);
+  /* tjek hvorfor denne ikke går igennem */
 }
 
 .bekraeftelse div {
@@ -164,7 +171,7 @@ button:active {
 /* bekræftigelse layout slut */
 
 /* tilpas så den ryger retur til same hover effekts etc som ovenstående pseudo */
-button {
+/* button {
   font-family: var(--font-family);
   font-weight: var(--font-weight-medium);
   font-size: var(--text-size);
@@ -179,7 +186,30 @@ button {
   width: 20%;
   justify-self: end;
   cursor: pointer;
+} */
+
+.btn-light {
+  justify-self: end;
 }
+
+.btn-light:hover {
+  background-color: var(--contrast);
+  color: var(--tertiary-light);
+}
+/* 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in;
+} */
+
 /* main {
   padding: 2rem;
   gap: 2rem;
