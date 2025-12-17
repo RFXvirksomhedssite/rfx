@@ -32,13 +32,6 @@ main {
   row-gap: 1rem;
 }
 
-.box1_1,
-.box1_2,
-.box2_1,
-.box2_2 {
-  padding: 2rem;
-}
-
 .box1_2 {
   display: none;
 }
@@ -79,7 +72,7 @@ p {
   color: var(--text-color);
 }
 
-img {
+.billed_pakker img {
   margin-top: 2rem;
   border-radius: 8px;
 }
@@ -107,7 +100,6 @@ img {
 .card1 {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
 }
 
 .btn {
@@ -169,14 +161,20 @@ button:active {
   .box2 {
     grid-template-columns: 1fr 1fr;
     row-gap: 0;
+    gap: 2rem;
   }
 
   .box1_2 {
     display: block;
+    margin-top: 3rem;
+  }
+  .box1_2 img {
+    border-radius: 8px;
   }
 
   .box2 {
     align-items: stretch;
+    margin-top: 2rem;
   }
 
   h1 {
@@ -217,3 +215,4 @@ button:active {
     display: block;
   }
 }
+/*404 css */
