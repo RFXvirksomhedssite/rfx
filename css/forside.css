@@ -114,10 +114,16 @@ img {
 
 .hero {
   background-image: url("/img/header_img_mobile.webp");
-  padding: 1rem 4rem;
+  background-size: cover;
+  padding: 1rem 3rem;
   margin-top: 2rem;
   margin-left: 5rem;
   margin-right: 5rem;
+}
+
+.hero-text {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 }
