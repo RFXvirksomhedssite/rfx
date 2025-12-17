@@ -191,18 +191,18 @@ button:active {
   }
   .billed_tekst {
     font-family: var(--font-family);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     justify-self: end;
     color: var(--text-color);
-    opacity: 60%;
+    opacity: 95%;
     font-weight: var(--font-weight-regular);
   }
   .billed_tekst a {
     text-decoration: underline;
     font-family: var(--font-family);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--text-color);
-    opacity: 100%;
+    opacity: 95%;
     font-weight: var(--font-weight-medium);
   }
 
