@@ -18,7 +18,7 @@ html {
   background-color: #ffffff;
 }
 
-main {
+.pakkehtml main {
   min-width: 350px;
   display: grid;
   grid-template-columns: 1fr;
@@ -49,7 +49,7 @@ main {
   background-color: transparent;
 }
 
-h1 {
+.pakkehtml h1 {
   font-size: var(--h1-size-mobile);
   color: var(--primary);
   font-weight: var(--font-weight-medium);
@@ -58,14 +58,14 @@ h1 {
   margin-top: 2rem;
 }
 
-h2 {
+.pakkehtml h2 {
   font-size: var(--h2-size-mobile);
   font-weight: var(--font-weight-regular);
   font-family: var(--font-family);
   color: #ffffff;
 }
 
-p {
+.pakkehtml p {
   font-size: var(--text-size-mobile);
   line-height: 1.5rem;
   font-family: var(--font-family);
@@ -106,7 +106,7 @@ p {
   margin-top: 1rem;
 }
 
-button {
+.pakkehtml button {
   background-color: var(--contrast-light);
   color: var(--text-color);
   padding: 10px 40px;
@@ -152,8 +152,8 @@ button:active {
 
 /* Desktop */
 
-@media (min-width: 801px) {
-  main {
+@media (min-width: 800px) {
+  .pakkehtml main {
     min-width: initial;
   }
 
@@ -177,19 +177,19 @@ button:active {
     margin-top: 2rem;
   }
 
-  h1 {
+  .pakkehtml h1 {
     font-size: var(--h1-size);
   }
 
-  h2 {
+  .pakkehtml h2 {
     font-size: var(--h2-size);
   }
 
-  p {
+  .pakkehtml p {
     font-size: var(--text-size);
     line-height: var(--text-line-height);
   }
-  .billed_tekst {
+  .box1_2 .billed_tekst {
     font-family: var(--font-family);
     font-size: 0.8rem;
     justify-self: end;
@@ -197,7 +197,7 @@ button:active {
     opacity: 95%;
     font-weight: var(--font-weight-regular);
   }
-  .billed_tekst a {
+  .box1_2 .billed_tekst a {
     text-decoration: underline;
     font-family: var(--font-family);
     font-size: 0.8rem;
@@ -206,7 +206,7 @@ button:active {
     font-weight: var(--font-weight-medium);
   }
 
-  button {
+  .pakkehtml button {
     font-size: var(--text-size);
     min-width: 190px;
   }
