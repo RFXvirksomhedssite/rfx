@@ -10,6 +10,14 @@ const beskedOutput = document.querySelector("#besked_output");
 const betingelserOutput = document.querySelector("#betingelser_output");
 
 // implementer ændring af højre side fra kontaktoplysninger til opsummering/bekræftelse på bestilling og forventet svartid
+const overskriften = document.querySelector("#h3ov");
+const knap = document.querySelector(".btn-light");
+
+knap.addEventListener("click", bhenvendelse);
+
+function bhenvendelse() {
+  overskriften.textContent = "Bekræftet henvendelse fra:";
+}
 
 // når man har lavet fejlbeskrivelse til required formularer, skal den orange pop up - (browserens orange standard box) blokeres.
 form.addEventListener("invalid", cancelPopup, true);
@@ -21,7 +29,7 @@ function cancelPopup(event) {
 
 // Tilføj event listener, der lytter efter 'submit' eventet (submit indstiller til reset af formular se slide 33)
 form.addEventListener("submit", handleSubmit);
-// indsæt hide-funktion for Kontaktoplysninger, når submittet og vi opsummering
+// indsæt hide-funktion for bekreaftelse som defualt, når submittet vis opsummering og tekst med Vi har modtaget din henvendelse og kontakter dig inden for 3-5 hverdage.
 
 // Lav en funktion, der stopper refresh og nulstiller formularen
 function handleSubmit(event) {
