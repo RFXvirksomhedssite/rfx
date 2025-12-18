@@ -16,7 +16,7 @@ const knap = document.querySelector(".btn-light");
 knap.addEventListener("click", bhenvendelse);
 
 function bhenvendelse() {
-  overskriften.textContent = "Bekræftet henvendelse fra:";
+  overskriften.textContent = "Bekræftet henvendelse:";
 }
 
 // når man har lavet fejlbeskrivelse til required formularer, skal den orange pop up - (browserens orange standard box) blokeres.
