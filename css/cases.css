@@ -24,23 +24,23 @@ img {
   margin-bottom: 50px;
   padding-bottom: 30px;
   margin-top: 50px;
-  border-bottom: 3px solid#d99429;
   display: inline-block;
 }
 
 .tideligerecases h1 {
-  font-size: 52px;
-  color: #000000;
-  font-weight: 500;
+  font-size: var(--h1-size);
+  color: var(--primary);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family);
   margin-bottom: 2rem;
-  font-family: "Roboto", sans-serif;
 }
 
 .tideligerecases p {
-  line-height: 1.6;
-  font-size: 20px;
+  font-size: var(--text-size);
+  line-height: var(--text-line-height);
+  font-family: var(--font-family);
+  color: var(--text-color);
   margin: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 .galleri {
@@ -58,7 +58,7 @@ img {
 
 .cases img {
   width: 100%;
-  height: 250px;
+  height: auto;
   display: block;
   object-fit: cover;
 }
@@ -88,24 +88,6 @@ img {
   margin-left: 10px;
 }
 
-.cases-prikker {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 30px;
-}
-
-.prik {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #cfcfcf;
-}
-
-.prik.aktiv {
-  background: #d99429;
-}
-
 #lightbox {
   position: fixed;
   inset: 0;
@@ -122,8 +104,63 @@ img {
 
 /*mobil*/
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+  .main {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
   .tideligerecases {
-    font-size: 16px;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    display: block;
+  }
+
+  .tideligerecases h1 {
+    margin-bottom: 1rem;
+    font-size: 30px;
+  }
+
+  .tideligerecases p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .galleri {
+    padding-bottom: 16px;
+  }
+
+  .cases_galleri {
+    grid-auto-columns: 80%;
+    gap: 12px;
+    padding: 10px 0 6px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cases {
+    scroll-snap-align: start;
+  }
+
+  .cases img {
+    border-radius: 10px;
+  }
+
+  .overskrift {
+    font-size: 13px;
+    margin: 10px 0 6px;
+  }
+
+  .caseknap {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .tideligerecases .caseknap {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }

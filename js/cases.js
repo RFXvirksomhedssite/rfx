@@ -1,5 +1,5 @@
 const swipefor = document.getElementById("swipefor");
-const swipeforbilleder = document.querySelectorAll("#swipeforbilleder");
+const swipeforbilleder = swipefor.querySelectorAll(".swipeforbilleder");
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
