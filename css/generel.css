@@ -133,7 +133,6 @@ header {
 .nav-bund {
   display: flex;
   list-style: none;
-  
 }
 
 .nav-top a {
@@ -180,7 +179,7 @@ nav ul {
 }
 
 .nav-bund li {
-margin-left: 4rem;
+  margin-left: 4rem;
 }
 
 nav a:link {
