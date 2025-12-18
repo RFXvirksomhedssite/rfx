@@ -62,7 +62,7 @@ img {
 }
 
 .hero {
-  background-image: url("/img/header_img.webp");
+  background-image: url("img/header_img.webp");
   background-repeat: no-repeat;
   background-size: contain;
   padding: 1rem 10rem;
